@@ -31,7 +31,7 @@ jobs:
       - name: Install AZ ML and tools
         run:
           az extension add -n ml -y
-          az configure --defaults group=jvg-mlops-workshop workspace=jvgmlopsaml location=EASTUS2
+          az configure --defaults group="jvg-mlops-workshop" workspace=jvgmlopsaml location="East US 2"
       - name: Run Feature Engineering
         uses: ./.github/actions/aml-job-create
         with:
