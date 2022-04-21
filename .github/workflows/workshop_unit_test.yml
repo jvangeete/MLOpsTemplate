@@ -28,7 +28,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS_USERNAME }} # SETUP: replace MY_AZURE_CREDENTIALS with your own secret name    
       - name: Install AZ ML and tools
-        run: | jvgmlopsaml # SETUP line 33 to point to your own AML workspace
+        run: jvgmlopsaml # SETUP line 33 to point to your own AML workspace
           az extension add -n ml -y
           az configure --defaults group=jvg-mlops-workshop workspace=jvgmlopsaml location=EASTUS2
       - name: Run Feature Engineering
