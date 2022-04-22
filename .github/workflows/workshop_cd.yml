@@ -51,7 +51,7 @@ jobs:
       - name: Test deployment
         uses: ./.github/actions/aml-endpoint-test
         with:
-          resourceGroup: "jvg-mlops-workshop" 
+          resourceGroup: jvg-mlops-workshop
           workspaceName: jvgmlopsaml
           endpointFile: src/workshop/core/scoring/endpoint.yml
           requestFile: src/workshop/core/scoring/scoring_test_request.json
@@ -59,6 +59,6 @@ jobs:
       - name: Swap deployment
         uses: ./.github/actions/aml-endpoint-swap
         with:
-          resourceGroup: "jvg-mlops-workshop" 
+          resourceGroup: jvg-mlops-workshop
           workspaceName: jvgmlopsaml
           endpointFile: src/workshop/core/scoring/endpoint.yml
